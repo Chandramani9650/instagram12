@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .grandfather{
+       width: 80%;
+       border: 1px solid black;
+       text-align: center;
+       font-size: 40px;
+       display: flex;
+       padding: 25px;
+       margin: auto;
+   
+     }
+     .father{
+        width: 50%;
+        border: 1px solid black;
+        padding: 15px;
+        margin-right: 40px;
+        /* margin: 30px; */
+     }
+     
+     .person{
+        display: flex;
+        border: 1px solid black;
+        justify-content: space-between;
+        padding: 15px;
+     }
+     .child {
+        width: 90px;
+        border: 1px solid black;
+        /* padding: 15px; */
+        margin: 10px;
+     }
+     .child+div+div>div {
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+       
+     }
+     .uncle{
+        width: 50%;
+        border: 1px solid black;
+       /* padding: 20px; */
+       margin: 10px;
+     }
+     .uncle>div{
+        width:350px ;
+        border: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+        margin-left: 10%; 
+       
+     }
+     .uncle>div>div{
+        width: 250px;
+       border: 1px solid black;
+        padding: 5px; 
+         
+        margin: 10px;
+        margin-inline:15%; 
+
+     }
+     .uncle>div>div>div{
+        width: 60px;
+        border: 1px solid black;
+        
+        margin: 10px;
+        margin-left: 30%;
+     }
+
+   
+    
+    </style>
+</head>
+<body>
+    <div class="grandfather">
+G
+
+        <div class="father">father
+            <div class="person">Person
+                <div class="child">child</div>
+                <div class="child">child</div>
+                <div class="child">child
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="uncle">uncle
+        <div class="person1">person1</div>
+        <div class="person2">person2
+            <div class="child1">child</div>
+            <div class="child2">child
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div>child</div>
+        </div>
+        <div class="person3">person3</div>
+    </div>
+
+
+
+    </div>
+</body>
+</html>
